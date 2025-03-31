@@ -1,0 +1,133 @@
+/*      */
+/* HERO */
+/*      */
+#hero {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 64px);
+    padding: 2rem;
+    margin: 0;
+}
+
+#hero-container{
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+}
+
+#hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hi-there {
+    width: min(50%, 240px);
+}
+
+.hero-face {
+    width: min(70%, 500px);
+    height:auto;
+    max-width: 800px;
+}
+
+
+#hero-name {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+}
+
+#hero-name-purple {
+    color: var(--primary-color);
+    /* stroke is likely not supported by IE browser */
+    -webkit-text-stroke: 3px var(--primary-text);
+}
+
+#hero p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+#hero .arrow {
+    height: min(50px, 5vw);
+    position: absolute;
+    bottom: 12px;
+}
+
+
+/*       */
+/* ABOUT */
+/*       */
+#about-container {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.about-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #hero-container, #about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-face {
+        width:min(70%, 400px);
+    }
+}
+
+
+
+/*          */
+/* SPIN TEXT*/
+/*          */
+
+.sp-words-wrapper span {
+    color: var(--primary-text);
+    font-family: "Bungee", sans-serif;
+    font-size: clamp(2rem, 3vw, 5rem);
+    position: absolute;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Visible word sliding up */
+.sp-words-wrapper span.is-visible {
+    animation: slideIn 0.5s forwards;
+}
+
+/* Hidden word sliding down */
+.sp-words-wrapper span.is-hidden {
+    animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
