@@ -46,6 +46,11 @@ section {
     margin: 2rem 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 button {
     font-size:24px;
     padding: 12px 24px;
@@ -60,6 +65,7 @@ button {
 button:hover {
     color: var(--primary-text);
     background: var(--primary-light);
+    cursor: pointer;
 }
 
 .solid-border {
@@ -134,12 +140,17 @@ section {
 .card-image {
     border-radius: 10px;
     position: relative;
-    /* left:10px; */
+    top: 50px; /* img move down for 50px */
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover .card-image {
+    transform: translateY(-50px);
 }
 
 .card-text-container {
     position: relative;
-    top: -100px;
+    top: -100px; /* text container move up for 100px */
     left:-16px;
     display: flex;
     flex-direction: column;
@@ -212,6 +223,17 @@ hr {
 
 #watercolour-section {
     background-color: var(--secondary-light);
+}
+
+.art-image {
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    margin: 16px;
+}
+
+.card:hover .art-image {
+    transform: rotate(-5deg);
 }
 
 .art-title {
