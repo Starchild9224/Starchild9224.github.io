@@ -1,3 +1,5 @@
+/* Hero section for home page and about page */
+
 /*      */
 /* HERO */
 /*      */
@@ -5,26 +7,30 @@
     display: flex;
     flex-direction: column;
     
-    /* justify-content: center; */
+    justify-content: center;
     height: calc(100vh - 64px);
     padding: 2rem;
-    margin: 128px 0 0 0;
+    /* margin: 128px 0 0 0; */
 }
 
 #hero-container{
     display: flex;
     flex-direction: row;
+    /* align-items: center; */
     /* width: 100%; */
+    height: 80%;
 }
 
-#hero-text-container {
+/*           */
+/* HERO FACE */
+/*           */
+#hero-face-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.hi-there {
-    width: min(50%, 240px);
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-face {
@@ -33,70 +39,6 @@
     max-width: 800px;
 }
 
-
-#hero-name {
-    font-size: clamp(2.5rem, 5vw, 5rem);
-}
-
-#hero-name-purple {
-    color: var(--primary-color);
-    /* stroke is likely not supported by IE browser */
-    -webkit-text-stroke: 3px var(--primary-text);
-}
-
-#hero p {
-    font-size: clamp(1rem, 2vw, 1.5rem);
-}
-
-#hero .arrow {
-    height: min(40px, 4vw);
-    position: absolute;
-    bottom: 2rem;
-}
-
-
-/*       */
-/* ABOUT */
-/*       */
-#about-container {
-    display: flex;
-    flex-direction: row;
-    padding: 5rem;
-}
-
-.about-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-
-
-/* Media Query for Smaller Screens */
-@media (max-width: 768px) {
-    #hero-container, #about-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-face {
-        width:min(70%, 400px);
-    }
-}
-
-/*      */
-/* FACE */
-/*      */
-#hero-face-container {
-    position: relative;
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #hero-face-container img{
     position: absolute;
 }
@@ -128,10 +70,87 @@
     }
 }
 
+/*           */
+/* HERO TEXT */
+/*           */
+#hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hi-there {
+    width: min(50%, 240px);
+}
+
+
+#hero-name {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+}
+
+#hero-name-purple {
+    color: var(--primary-color);
+    /* stroke is likely not supported by IE browser */
+    -webkit-text-stroke: 3px var(--primary-text);
+}
+
+#hero p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+#hero .arrow {
+    height: min(36px, 4vw);
+    position: absolute;
+    bottom: 2rem;
+}
+
+
+/*       */
+/* ABOUT */
+/*       */
+#about-container {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    gap: 1rem;
+}
+
+#about-container .hero-face {
+    width: min(50%, 400px);
+}
+
+.about-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #hero-container, #about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-face {
+        width:min(70%, 360px);
+    }
+}
+
+
+
 /*          */
 /* SPIN TEXT*/
 /*          */
-
+.sp-words-wrapper {
+    height: 2rem;
+}
 .sp-words-wrapper span {
     color: var(--primary-text);
     font-family: "Bungee", sans-serif;

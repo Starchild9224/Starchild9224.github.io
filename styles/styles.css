@@ -43,12 +43,23 @@ h1, h2 {
 }
 
 section {
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 42px;
+    max-width: 1200px;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+#see-more-link {
+    /* width: 80%;
+    text-align: end; */
 }
 
 button {
@@ -113,12 +124,12 @@ nav .selected{
 /*      */
 /* CARD */
 /*      */
-section {
+/* section {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-}
+} */
 
 /* TODO: flex card size */
 .cards-container {
@@ -217,6 +228,12 @@ hr {
 
 /* ARTWORKS CARD */
 
+.artwork-section{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 42px 0;
+}
+
 #graphic-section {
     background-color: var(--primary-light);
 }
@@ -241,6 +258,51 @@ hr {
     color: var(--primary-color);
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+.page-button {
+    width: 72px;
+    height: 72px;
+    padding: 21px;
+    background-color: transparent;
+    color: var(--primary-text);
+}
+
+.page-button:hover {
+    background-color: #9887dd7d;
+    /* color: var(--primary-color); */
+}
+
+.page-arrow {
+    width: 24px;
+    height: 24px;
+}
+
+.page-number-button {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    border: none;
+    background-color: transparent;
+    color: var(--primary-text); 
+}
+
+.page-number-button:hover {
+    background-color: transparent;
+    color: var(--primary-color); 
+}
+
+.page-break-line {
+    display: inline-block;
+    width: 4rem;
+    height: 3px;
+    background-color: var(--primary-text);
+    margin: 0 auto;
+}
 
 
 
