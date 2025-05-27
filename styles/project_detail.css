@@ -15,6 +15,12 @@
     margin-top: 16px;
 }
 
+.section-subheading {
+    /* color: var(--secondary-text); */
+    /* font-family: "Bungee", sans-serif;
+    font-size: 1.25rem; */
+}
+
 /* Images */
 .full-width-image {
     width: 100%;
