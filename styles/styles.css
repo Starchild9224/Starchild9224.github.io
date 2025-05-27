@@ -158,11 +158,11 @@ nav .selected{
 
 .card-image {
     width: 500px;
-    height: 400px;
+    height: 375px;
     overflow: hidden;
     border-radius: 10px;
     position: relative;
-    top: 50px; /* img move down for 50px */
+    top: 20px; /* img move down for 50px */
     transition: transform 0.2s ease-in-out;
 }
 
@@ -173,7 +173,7 @@ nav .selected{
 }
 
 .card:hover .card-image {
-    transform: translateY(-50px);
+    transform: translateY(-20px);
 }
 
 /* Card size - mobile view */
@@ -196,12 +196,11 @@ nav .selected{
 
 .card-text-container {
     position: relative;
-    top: -100px; /* text container move up for 100px */
+    top: -85px; /* text container move up for 100px */
     left:-16px;
     display: flex;
     flex-direction: column;
-    /* TODO: fixed size image?*/
-    height: calc(100% - 400px);
+    height: calc(100% - 375px);
 }
 
 .card-tag {
@@ -274,7 +273,7 @@ hr {
 }
 
 #watercolour-section {
-    background-color: var(--reverse-text);
+    background-color: var(--secondary-light);
 }
 
 .art-card {
