@@ -6,6 +6,9 @@
     <title>Artwork</title>
 
     <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- P5 library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
 </head>
 <body>
     <header>
@@ -32,19 +35,19 @@
         <div class="cards-container">
             <article class="art-card">
                 <figure class="art-image solid-border">
-                    <img src="https://placehold.co/300x600">
+                    <img class="modal-trigger" src="https://placehold.co/1200x900" alt="Placeholder of the image description">
                 </figure>
                 <h2 class="art-title">project</h2>
             </article>
             <article class="art-card">
                 <figure class="art-image solid-border">
-                    <img src="https://placehold.co/300x600">
+                    <img class="modal-trigger" src="https://placehold.co/300x600" alt="Placeholder of the image description">
                 </figure>
                 <h2 class="art-title">project</h2>
             </article>
             <article class="art-card">
                 <figure class="art-image solid-border">
-                    <img src="https://placehold.co/300x600">
+                    <img class="modal-trigger" src="https://placehold.co/300x600" alt="Placeholder of the image description">
                 </figure>
                 <h2 class="art-title">project</h2>
             </article>
@@ -57,25 +60,27 @@
             <button class="page-button"><img class="page-arrow" src="assets/arrow_right_black.png" alt="next page"></button>
         </div>
     </section>
+
+    <div id="white-purple-wave-container"></div>
 
     <section id="graphic-section" class="artwork-section">
         <h1>Poster design</h1>
         <div class="cards-container">
             <article class="art-card">
                 <figure class="art-image solid-border">
-                    <img src="https://placehold.co/300x600">
+                    <img class="modal-trigger" src="https://placehold.co/300x300" alt="Placeholder of the image description">
                 </figure>
                 <h2 class="art-title">project</h2>
             </article>
             <article class="art-card">
                 <figure class="art-image solid-border">
-                    <img src="https://placehold.co/300x600">
+                    <img class="modal-trigger" src="https://placehold.co/300x300" alt="Placeholder of the image description">
                 </figure>
                 <h2 class="art-title">project</h2>
             </article>
             <article class="art-card">
                 <figure class="art-image solid-border">
-                    <img src="https://placehold.co/300x600">
+                    <img class="modal-trigger" src="https://placehold.co/300x300" alt="Placeholder of the image description">
                 </figure>
                 <h2 class="art-title">project</h2>
             </article>
@@ -89,24 +94,26 @@
         </div>
     </section>
 
+    <div id="purple-green-wave-container"></div>
+
     <section id="watercolour-section" class="artwork-section">
         <h1>Poster design</h1>
         <div class="cards-container">
             <article class="art-card">
                 <figure class="art-image solid-border">
-                    <img src="https://placehold.co/300x600">
+                    <img class="modal-trigger" src="https://placehold.co/300x300" alt="Placeholder of the image description">
                 </figure>
                 <h2 class="art-title">project</h2>
             </article>
             <article class="art-card">
                 <figure class="art-image solid-border">
-                    <img src="https://placehold.co/300x600">
+                    <img class="modal-trigger" src="https://placehold.co/300x300" alt="Placeholder of the image description">
                 </figure>
                 <h2 class="art-title">project</h2>
             </article>
             <article class="art-card">
                 <figure class="art-image solid-border">
-                    <img src="https://placehold.co/300x600">
+                    <img class="modal-trigger" src="https://placehold.co/300x300" alt="Placeholder of the image description">
                 </figure>
                 <h2 class="art-title">project</h2>
             </article>
@@ -119,6 +126,13 @@
             <button class="page-button"><img class="page-arrow" src="assets/arrow_right_black.png" alt="next page"></button>
         </div>
     </section>
+
+    <!-- Shared Modal -->
+    <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content">
+        <figcaption class="modal-caption"></figcaption>
+    </div>
 
     <footer>
         <p>
@@ -126,6 +140,7 @@
         </p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="scripts/artDivider.js"></script>
+    <script src="scripts/imgModal.js"></script>
 </body>
 </html>
