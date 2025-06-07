@@ -34,19 +34,34 @@
     </section>
 
     <section class="project-section">
-        
+
         <h2 class="section-heading">Overview</h2>
         <p>
-            Interview Hub is a user-centered platform that designed to streamline interview preparation, focusing on intuitive navigation, clear content hierarchy, and an engaging, stress-free user experience. I led the end-to-end design process for this project, from initial concept and user research to interactive high-fidelity prototypes and final design documentation for handoff. The design includes:
+            Interview Hub is a user-centered platform that designed to streamline interview preparation, focusing on
+            intuitive navigation, clear content hierarchy, and an engaging, stress-free user experience. I led the
+            end-to-end design process for this project, from initial concept and user research to interactive
+            high-fidelity prototypes and final design documentation for handoff. The design includes:
         </p>
+        <div class="inline-wrapper">
+            <h3 class="section-subheading">User Interface: </h3>
+            <p>
+                Browsing and filtering interview questions, editing answers, customizing personal question sets, and
+                daily review check-ins
+            </p>
+        </div>
+        <div class="inline-wrapper">
+            <h3 class="section-subheading">Admin Panel: </h3>
+            <p>
+                Managing content and updating the question database for user to catch up with the newest interview
+                information. Manage user's account information and review comments and posts made by user to maintain a
+                friendly online community.
+            </p>
+        </div>
         <p>
-            <h3 class="section-subheading">User Interface: </h3> Browsing and filtering interview questions, editing answers, customizing personal question sets, and daily review check-ins
-        </p>
-        <p>
-            <h3 class="section-subheading">Admin Panel: </h3> Managing content and updating the question database for user to catch up with the newest interview information. Manage user's account information and review comments and posts made by user to maintain a friendly online community.
-        </p>
-        <p>
-            Through user research and iterative design, I created low-fidelity sketches and gradually evolved them into a functional hi-fi prototype. During development, I conducted Cognitive Walkthroughs to identify usability issues and ensure the interface met user expectations. The final deliverables included a complete developer-ready design specification.
+            Through user research and iterative design, I created low-fidelity sketches and gradually evolved them into
+            a functional hi-fi prototype. During development, I conducted Cognitive Walkthroughs to identify usability
+            issues and ensure the interface met user expectations. The final deliverables included a complete
+            developer-ready design specification.
         </p>
     </section>
 
@@ -54,48 +69,69 @@
         <h2 class="section-heading">Admin Side Design Challenges</h2>
         <h3 class="section-subheading">Pixels are perfect—until they hit production </h3>
         <p>
-            Admin side design often consider functions over appearance. While design explores the ideal, implementation often needs balance with technical realities —including storage structure, code efficiency, system performance, and reusability—ensuring that the final product remains robust, maintainable, and scalable. Based on UX design principles, this also requires designers to have a certain level of understanding of code.
+            Admin side design often consider functions over appearance. While design explores the ideal, implementation
+            often needs balance with technical realities —including storage structure, code efficiency, system
+            performance, and reusability—ensuring that the final product remains robust, maintainable, and scalable.
+            Based on UX design principles, this also requires designers to have a certain level of understanding of
+            code.
         </p>
         <p>
-            Through cognitive walkthrough user testing with developers, several previously overlooked issues were identified:<br>
+            Through cognitive walkthrough user testing with developers, several previously overlooked issues were
+            identified:<br>
         </p>
         <ul>
-            <li>First, compared to creating a new page, pop-ups provide weaker protection against errors related to information storage. Data entered into a pop-up is more vulnerable to loss if the user refreshes or navigates away, whereas a new page structure offers greater stability across page transitions.<br>
+            <li>First, compared to creating a new page, pop-ups provide weaker protection against errors related to
+                information storage. Data entered into a pop-up is more vulnerable to loss if the user refreshes or
+                navigates away, whereas a new page structure offers greater stability across page transitions.<br>
             </li>
-            <li>Second, from a development complexity perspective, implementing modals may be more complicated in terms of frontend interaction and state management.<br>
+            <li>Second, from a development complexity perspective, implementing modals may be more complicated in terms
+                of frontend interaction and state management.<br>
             </li>
-            <li>Third, when form contents vary significantly, the reusability of pop-ups is limited, resulting in lower development efficiency.
+            <li>Third, when form contents vary significantly, the reusability of pop-ups is limited, resulting in lower
+                development efficiency.
             </li>
         </ul>
         <p>
-            Take the content input box as an example: drawing on my UX experience and the current project requirements, I have summarized the following input methods.
+            Take the content input box as an example: drawing on my UX experience and the current project requirements,
+            I have summarized the following input methods.
         </p>
-    </section>
 
-    <section class="project-section">
-        <img class="full-width-image" src="../assets/interview hub project/input box.png" alt="Full-width project image" />
+        <img class="full-width-image" src="../assets/interview hub project/input box.png"
+            alt="Full-width project image" />
     </section>
 
     <section class="project-section">
         <h2 class="section-heading">The iteration & solution</h2>
         <h3 class="section-subheading">Iteration of the admin panel input dialog </h3>
         <p>
-            By integrating options directly into the user workflow and visualise unnecessary explanation , the modal content is streamlined, improving its code reusability during development. It also increased user interface consistency and  better maintained the same standard.
+            By integrating options directly into the user workflow and visualise unnecessary explanation , the modal
+            content is streamlined, improving its code reusability during development. It also increased user interface
+            consistency and better maintained the same standard.
         </p>
-        <img class="full-width-image" src="../assets/interview hub project/iteration detail2.png" alt="Full-width project image" />
+        <img class="full-width-image" src="../assets/interview hub project/iteration detail2.png"
+            alt="Full-width project image" />
+        <br>
         <div class="two-column-grid">
             <div class="two-column">
                 <p>
-                    <h3 class="section-subheading">Refining the Add-Question Interface</h3>
+                <h3 class="section-subheading">Refining the Add-Question Interface</h3>
                 </p>
                 <p>
-                    Replacing the modal with a dedicated “Add Question” page reduces the risk of accidental interactions and unintended closures. It also clarifies the page hierarchy, enhances error prevention, and enables more efficient back-end data processing.
+                    Replacing the modal with a dedicated “Add Question” page reduces the risk of accidental interactions
+                    and unintended closures. It also clarifies the page hierarchy, enhances error prevention, and
+                    enables more efficient back-end data processing.
                 </p>
                 <p>
-                    In addition, a full-page interface improves task focus and reduces user errors. Unlike modals—which often feel temporary and easy to dismiss—a dedicated page conveys task importance and encourages more deliberate input. This is particularly effective for multi-step or cognitively demanding actions like writing detailed questions, helping to improve completion rates and reduce form abandonment.
+                    In addition, a full-page interface improves task focus and reduces user errors. Unlike modals—which
+                    often feel temporary and easy to dismiss—a dedicated page conveys task importance and encourages
+                    more deliberate input. This is particularly effective for multi-step or cognitively demanding
+                    actions like writing detailed questions, helping to improve completion rates and reduce form
+                    abandonment.
                 </p>
                 <p>
-                    From an accessibility perspective, full pages offer better support for screen readers and keyboard navigation, ensuring compliance with WCAG standards and providing a smoother experience for users with diverse needs.
+                    From an accessibility perspective, full pages offer better support for screen readers and keyboard
+                    navigation, ensuring compliance with WCAG standards and providing a smoother experience for users
+                    with diverse needs.
                 </p>
             </div>
             <div class="two-column">

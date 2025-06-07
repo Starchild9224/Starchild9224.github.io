@@ -15,6 +15,26 @@
     margin-top: 16px;
 }
 
+.section-subheading {
+    margin-top: 16px;
+}
+
+/* Anything under the inline-wrapper will be displayed inline*/
+.inline-wrapper {
+    margin-top: 16px;
+}
+
+.inline-wrapper * {
+    display: inline;
+}
+
+/* Callout */
+.callout {
+    border-left: 6px solid var(--primary-color);
+    padding: 0 16px 16px 16px;
+    margin-top: 16px;
+}
+
 
 /* Images */
 .full-width-image {
