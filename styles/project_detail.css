@@ -19,6 +19,13 @@
     margin-top: 16px;
 }
 
+.project-section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+    padding-left: 20px;
+}
 /* Anything under the inline-wrapper will be displayed inline*/
 .inline-wrapper {
     margin-top: 16px;
