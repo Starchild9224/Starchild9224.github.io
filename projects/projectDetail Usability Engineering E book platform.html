@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title</title>
+
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/project_detail.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a class="selected" href="../uiux.html">UI/UX</a>
+                </li>
+                <li>
+                    <a href="../artwork.html">Artwork</a>
+                </li>
+                <li>
+                    <a href="../about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="project-intro">
+        <h1 class="project-title">Nutrition E-book UX Design</h1>
+        <h2 class="section-heading">Critique and Innovation of ProQuest Ebook Central</h2>
+    </section>
+
+    <section class="project-section">
+
+        <h2 class="section-heading">Overview</h2>
+        <p>
+            This project aims to develop an innovative e-textbook for a general university-level nutrition course. Unlike traditional e-textbooks and the existing ProQuest Ebook platform, this version will incorporate highly interactive features designed to enhance the learning experience. Throughout the development process, rigorous usability engineering principles and systematic user testing were applied to comprehensively optimize the system—resulting in a platform that not only innovates upon but also surpasses existing e-book solutions.
+        </p>
+    </section>
+
+    <!-- single image -->
+    <section class="project-section">
+        <img class="full-width-image" src="../assets/UX ebook/UX cover.png" alt="Full-width project image" />
+    </section>
+    <!-- Slideshow -->
+    <section class="project-section">
+        <h2 class="section-heading">User research</h2>
+        <div class="slideshow-container solid-border">
+            <!-- one div per slide -->
+            <div class="mySlides fade">
+                <!-- <p class="numbertext">1 / 3</p> -->
+                <img src="../assets/UX ebook/user reaseach-1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <p class="numbertext">2 / 3</p> -->
+                <img src="../assets/UX ebook/user research -2.png" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <button class="prev page-button" onclick="plusSlides(-1)"><img class="page-arrow"
+                    src="../assets/arrow_left_black.png" alt="previous page"></button>
+            <button class="next page-button" onclick="plusSlides(1)"><img class="page-arrow"
+                    src="../assets/arrow_right_black.png" alt="next page"></button>
+        </div>
+
+        <!-- The dots/circles -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+    <section class="project-section">
+        <h2 class="section-heading">How did we get there </h2>
+        <h3 class="section-subheading">The user testing process </h3>
+        <img class="full-width-image" src="../assets/UX ebook/user testing process summary.png" alt="Full-width project image" />
+    </section>
+
+    <footer>
+        <p>
+            ©2025 Cheyenne Wu. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="../scripts/slideshow.js"></script>
+</body>
+</html>
