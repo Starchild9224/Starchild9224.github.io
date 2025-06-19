@@ -30,35 +30,129 @@
 
 
     <section class="project-intro">
-        <h1 class="project-title">Project Title</h1>
+        <h1 class="project-title">Map Mima - Ignite the sparks</h1>
     </section>
-
     <section class="project-section">
-        
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/K8d_JJ7oY1o?si=GtDRBif-QvHfKxl2" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="project-section">
         <h2 class="section-heading">Overview</h2>
-        <h3 class="section-subheading">One sentence summary for overview </h3>
         <p>
-            Atlassian is renowned for its outstanding collaboration tools and project management software, providing efficient and innovative business solutions and earning accolades from many professionals. However, our products have limited use among students. To familiarize our users with our products early on and facilitate a smoother transition from student to workforce, we are currently focused on designing a new web-based application that will help student teams collaborate effectively and align our products with the workplace. Our mission is to make work more simple and more meaningful, enabling better connections and growth.
+            Nestled along the scenic shores of Lake Macquarie, MAP Mima (Multi-Arts Pavilion) stands as a symbol of artistic potential within a verdant recreational park. Despite its strategic location, this cultural hub has largely gone unnoticed by the public. In an effort to draw more attention to the site, Ignite the Sparks utilizes the pre-existing Catenary lighting structure outside the Mima hub, turning it into an interactive lighting installation.
         </p>
     </section>
-
     <section class="project-section">
-        <h2 class="section-heading">Full-Width Image</h2>
-        <img class="full-width-image" src="https://placehold.co/960x500" alt="Full-width project image" />
+        <h2 class="section-heading">Design Concept</h2>
+        <h3 class="section-subheading">
+            Cherishing sunsets, togetherness, and all the beautiful moments worth capturing. </h3>
+        <p>
+            For thousands of years, people have gathered and lived on the land of Lake Macquarie, creating cherished moments and memories - from the stories that the Awabakal people have passed down to the serene sunsets and water reflections that bring people together after another precious day.
+        </p>
+        <p>
+            At the heart of Ignite the Sparks lies a design concept that seeks to capture the fleeting beauty of transient moments, such as sunsets and fireworks. The project is crafted to encourage playful exploration, invoking positive emotions, warmth, and a sense of connection. As night descends, the installation comes to life, extending the allure of the sunset through a dynamic play of lights. With a user-friendly mobile app, visitors become co-creators, customizing and collectively illuminating the Catenary with digital fireworks. This installation not only enriches the outdoor space but also draws visitors, fostering a vibrant and inviting atmosphere that complements MAP Mima's minimal design.
+        </p>
+    </section>
+    <section class="project-section">
+        <img class="full-width-image" src="../assets/Map mima/content image.png" alt="Full-width project image" />
+    </section>
+    <!-- Slideshow -->
+    <section class="project-section">
+        <h2 class="section-heading">UI/UX design philosophy</h2>
+        <div class="two-column-grid">
+            <div class="two-column">
+                <h3 class="section-subheading">01.Minimalist and Engaging Visuals </h3>
+                <p>
+                    Use appropriate sizing, spacing, and vibrant colours as visual cues to guide users' attention and emphasize key information. By incorporating large colour blocks, I want to establish a clear visual hierarchy while also creating an interface that feels playful and engaging.
+                </p><br>
+            </div>
+            <div class="two-column">
+                <h3 class="section-subheading">02.Simplicity and Consistency </h3>
+                <p>
+                    Use intuitive navigation and straightforward instructions to clearly tell users how to interact with the pages. Maintain consistent visual elements and design language to help users understand and navigate the interface more easily.
+                </p><br>
+            </div>
+        </div>
+        <div class="slideshow-container solid-border">
+            <!-- one div per slide -->
+            <div class="mySlides fade">
+                <!-- <p class="numbertext">1 / 3</p> -->
+                <img src="../assets/Map mima/Interface1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <p class="numbertext">2 / 3</p> -->
+                <img src="../assets/Map mima/Interface2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <p class="numbertext">3 / 3</p> -->
+                <img src="../assets/Map mima/Interface3.png" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <button class="prev page-button" onclick="plusSlides(-1)"><img class="page-arrow"
+                    src="../assets/arrow_left_black.png" alt="previous page"></button>
+            <button class="next page-button" onclick="plusSlides(1)"><img class="page-arrow"
+                    src="../assets/arrow_right_black.png" alt="next page"></button>
+        </div>
+
+        <!-- The dots/circles -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </section>
 
     <section class="project-section">
-        <h2 class="section-heading">Left & Right Columns</h2>
+        <h2 class="section-heading">Design Outcomes </h2>
+        <h3 class="section-subheading">From Solo Spark to Shared Glow: An Interactive Lighting Experience </h3>
+        <p>
+            The design features an engaging mobile interface that empowers users to interact with the lighting installation seamlessly. The controlling signals are sent to the backend of the installation through wifi.
+        </p>
+        <p>
+            <h3 class="section-subheading">Passive Mode </h3>
+            In moments of inactivity, the lighting installation gracefully transitions into a fluid sunset backdrop. The vertical poles gradually illuminate in a rhythmic breathing pattern, casting a warm and inviting ambiance that encourages exploration. These gentle breathing lights serve as a focal point during the passive mode, intuitively guiding visitors and enticing them to engage further.
+        </p>
         <div class="two-column-grid">
             <div class="two-column">
                 <p>
-                    This is the left column. You can describe your design process, key insights, or include a timeline.
+                    <h3 class="section-subheading">Individual Interaction Mode </h3>
+                    Upon selecting a launch point and their preferred firework colour via the mobile interface, users are given two ignition options. They can either hold the button for a continuous firework display or click for a single firework. Each ignition triggers a distinct firework display generated randomly in one of three modes: rings, rays, or sparkles. This element of unpredictability brings dynamism to the visual experience, ensuring that every interaction is a uniquely creative and engaging event.
                 </p>
             </div>
             <div class="two-column">
-                <img class="column-image" src="https://placehold.co/400x300" alt="Supporting image" />
+                <img class="column-image" src="../assets/Map mima/mode1.gif" alt="Supporting image" />
             </div>
         </div>
+    </section>
+
+    <section class="project-section">
+        <div class="two-column-grid">
+            <div class="two-column">
+                <img class="column-image" src="../assets/Map mima/mode2.gif" alt="Supporting image" />
+            </div>
+            <div class="two-column">
+                <p>
+                    <h3 class="section-subheading">Collaborative Interaction Mode</h3>
+                    The design cultivates collaborative experiences for multiple users, allowing them to share the launch pole. Each successive user chooses a unique colour, adding their individual touch to the collective display. As more participants join, a vibrant array of fireworks emerges. Our design promotes interaction among visitors, fostering an atmosphere where people collectively revel in moments of joy and amusement.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <img class="full-width-image" src="../assets/Map mima/overview.gif" alt="Full-width project image" />
+    </section>
+
+    <section class="project-section">
+        <h2 class="section-heading">Implementation photos</h2>
+        <img class="full-width-image" src="../assets/Map mima/site image.png" alt="Full-width project image" />
     </section>
 
     <section class="project-section">
@@ -79,21 +173,13 @@
         </div>
     </section>
 
-    <section class="project-section">
-        <h2 class="section-heading">Embedded Video</h2>
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/MtLHwqbE1eI?si=CIC5OjRATj03z1Ri" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
-
 
     <footer>
         <p>
             ©2025 Cheyenne Wu. All Rights Reserved.
         </p>
     </footer>
+
+    <script src="../scripts/slideshow.js"></script>
 </body>
 </html>
