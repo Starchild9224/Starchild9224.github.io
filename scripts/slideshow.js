@@ -1,28 +1,46 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+// Loop through all slideshow containers
+document.querySelectorAll('.slideshow-container').forEach((container, slideshowIndex) => {
+  let slideIndex = 1;
+  const slides = container.getElementsByClassName("mySlides");
+  const dotContainer = container.nextElementSibling;
+  const dots = dotContainer?.getElementsByClassName("dot") || [];
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  // Show initial slide
+  showSlides(slideIndex);
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+  // Attach event listeners to arrows
+  const prevBtn = container.querySelector('.prev');
+  const nextBtn = container.querySelector('.next');
+  prevBtn?.addEventListener('click', () => changeSlide(-1));
+  nextBtn?.addEventListener('click', () => changeSlide(1));
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  // Attach event listeners to dots
+  Array.from(dots).forEach((dot, i) => {
+    dot.addEventListener('click', () => currentSlide(i + 1));
+  });
+
+  function changeSlide(n) {
+    showSlides(slideIndex += n);
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+
+  function showSlides(n) {
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("active");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    if (dots.length) {
+      dots[slideIndex - 1].classList.add("active");
+    }
+  }
+});
