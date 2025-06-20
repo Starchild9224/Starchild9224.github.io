@@ -9,8 +9,10 @@
     --primary-light: #dbd3ed;
     --secondary-light: #d3edd8;
 
-    --nav-color: #8e7ca8;
-    --nav-selected-color: #3d1e6dd1;
+    /* --nav-color: #8e7ca8;
+    --nav-selected-color: #3d1e6dd1; */
+    --nav-color:#604686;
+    --nav-hover-color:#5f4686c0;
 
     --primary-text: #2b2539;
     --secondary-text: #524e62;
@@ -122,17 +124,21 @@ nav ul {
 nav a {
     text-decoration: none;
     color: var(--nav-color);
+    border: var(--nav-color) 2px solid;
+    border-radius: 1em;
+    padding: 6px 36px;
+    transition: 0.2s;
 }
 
 nav a:hover {
-    color: var(--nav-selected-color);
+    background-color: var(--nav-hover-color);
+    color: var(--reverse-text);
     cursor: pointer;
 }
 
 nav .selected {
-    text-decoration: none;
-    color: var(--nav-selected-color);
-    border-bottom: 3px var(--nav-selected-color) solid;
+    background-color: var(--nav-color);
+    color: var(--reverse-text);
 }
 
 /*      */
