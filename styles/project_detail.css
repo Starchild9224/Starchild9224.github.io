@@ -151,7 +151,7 @@
 .dot-container {
     align-self: center;
     padding: 16px 0;
-}   
+}
 .dot {
     cursor: pointer;
     height: 15px;
@@ -182,3 +182,44 @@
         opacity: 1;
     }
 }
+/*PDF reader*/
+.pdf-wrapper {
+    position: relative;
+    width: 90%;
+    max-width: 1400px;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    }
+
+.pdf-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    }
+
+.fullscreen-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+    }
+
+.fullscreen-btn:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+
+@media (max-width: 768px) {
+    .pdf-wrapper {
+        aspect-ratio: auto;
+        height: 80vh;
+    }
+    }
