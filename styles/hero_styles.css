@@ -39,6 +39,12 @@
     max-width: 800px;
 }
 
+.about-figure {
+    width: min(70%, 350px);
+    height:auto;
+    max-width: 800px;
+}
+
 #hero-face-container img{
     position: absolute;
 }
@@ -112,6 +118,7 @@
 /*       */
 #about-container {
     display: flex;
+    align-items: flex-start;
     flex-direction: row;
     padding: 5rem;
     gap: 1rem;

@@ -91,6 +91,23 @@ button:hover {
     cursor: pointer;
 }
 
+.button {
+    font-size: 24px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: 3px solid var(--primary-text);
+    color: var(--reverse-text);
+    background: var(--primary-color);
+    transition-duration: 0.3s;
+    /* transition:all 0.3s ease; */
+}
+
+.button:hover {
+    color: var(--primary-text);
+    background: var(--primary-light);
+    cursor: pointer;
+}
+
 .solid-border {
     border: 3px solid var(--primary-text);
 }
